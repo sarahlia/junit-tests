@@ -29,7 +29,12 @@ public class Student {
         this.grades.add(aGrade);
     }
 
-//    public static void setName(String aName) {
-//        this.name = null;
-//    }
+    public double getGradeAverage() {
+        int total = 0;
+        for(int grade:grades) {
+            total = total + grade;
+        }
+        return (double) total/grades.size();
+    }
+
 }
