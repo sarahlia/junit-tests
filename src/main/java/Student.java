@@ -2,9 +2,9 @@ import java.util.ArrayList;
 
 public class Student {
 
-    public String name;
-    public long id;
-    public ArrayList<Integer> grades;
+    private String name;
+    private long id;
+    private ArrayList<Integer> grades;
 
 
     public Student(String name, long id) {
@@ -30,6 +30,10 @@ public class Student {
     }
 
     public double getGradeAverage() {
+        if (this.grades.size() == 0) {
+            return 0;
+        }
+
         int total = 0;
         for(int grade:grades) {
             total = total + grade;
