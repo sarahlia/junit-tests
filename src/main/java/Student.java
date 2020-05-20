@@ -25,6 +25,10 @@ public class Student {
         return this.grades;
     }
 
+    public void addGrade(int aGrade) {
+        this.grades.add(aGrade);
+    }
+
 //    public static void setName(String aName) {
 //        this.name = null;
 //    }

@@ -20,6 +20,11 @@ public class StudentTest {
         assertEquals(0, joanne.getGrades().size() );
     }
 
-
+    @Test
+    public void testIfHasAddGradeMethod() {
+        Student jordan = new Student("jordan", 24L);
+        jordan.addGrade(85);
+        assertSame(85, jordan.getGrades().get(0) );
+    }
 
 }
